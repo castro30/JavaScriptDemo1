@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+</head>
+<body>
+<script language = "javascript" type = "text/javascript"/>
+var fruits = ["apple", "orange","mango","kiwi", "grapes"];
+var arr = new Array(5);
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+arr[3] = 40;
+arr[4] = 50;
+
+var array = [7,2,8,1,3,4];
+var j,k,temp;
+var num = parseInt(prompt("Enter a number to search", "Enter..."));
+var found = false;
+
+for(i = 0; i<5;i++)
+{
+	document.write(arr[i]+"<br />");
+	document.write(fruits[i]+"<br/>");
+}
+document.write("<br/><br/>Before Sort...<br/>");
+for (j=0;j<6;j++){
+	document.write(array[j]+"<br/>");
+	}
+document.write("<br/><br/>Between Sort...<br/>");
+for (j=0;j<6;j++)
+{
+	for(k=0;k<5;k++)
+	{
+		if (array[k]>array[k+1]){
+			larger = array[k];
+			array[k]=array[k+1];
+			array[k+1]=larger;
+		}
+	}
+}
+
+for (i=0;i<6;i++)
+{
+	document.write(array[i]+"<br/>");
+}
+
+for(i=0;i<6;i++)
+{
+	if(array[i]==num)
+	{
+		found=true;
+		break;
+	}
+}
+
+if(found)
+{
+	document.write("Element found...");
+}
+else
+{
+	document.write("Element Not Found...");
+}
+</script>
+</body>
+</html>

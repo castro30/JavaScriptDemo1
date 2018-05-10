@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>JavaScript Demo</title>
+</head>
+<body>
+<script language = "javascript" type = "text/javascript">
+var num = parseInt(prompt("Enter a number","Enter"));
+var count = 0;
+while(num>0)
+{
+num = Math.trunc(num/10);
+count++
+}
+document.write("Digit : "+count);
+</script>
+<hr/>
+<script language = "javascript" type = "text/javascript">
+var actualpin = "1234";
+var pin;
+var attempts = 0;
+
+do
+{pin = prompt("Please enter your pin","Enter...");
+count++;
+}while(pin!=actualpin && count<3);
+if(pin==actualpin){
+document.write("Welcome User!");
+}else{
+document.write("Account locked");
+}
+</script>
+</body>
+</html>
