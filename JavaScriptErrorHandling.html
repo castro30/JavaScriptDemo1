@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>JavaScript Demo</title>
+<script language = "javascript" type = "text/javascript">
+	function myFunc()
+	{
+		var a=100;
+		var b = 100;
+		try
+		{
+			vars= s=a.toUpperCase();
+			alert("Value of variable a is : "+s);
+		}
+		catch (e)
+		{
+			alert("Error");
+		}
+		
+		finally
+		{
+			alert("Finally block will always execute!");
+		}
+	}
+</script>
+</head>
+<body>
+<p>Click the following to see the result</p>
+<form>
+	<input type="button" onClick="myFunc()" value="Click Me"/>
+</form>
+
+</body>
+</html>
