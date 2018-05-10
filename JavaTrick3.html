@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>JavaScript Demo3</title>
+	</head>
+	
+	<body>
+		<script language="javascript" type="text/javascript">
+		
+			var grade1 = parseInt(prompt("Grade1","Enter"));
+			var grade2 = parseInt(prompt("Grade2","Enter"));
+			var grade3 = parseInt(prompt("Grade3","Enter"));
+			
+			var total = grade1+grade2+grade3;
+			var average = total/3;
+			
+			document.write(average);
+			document.write(total);
+			
+			if (average>90)
+				{ alert("Grade: A");}
+			else if (average>80)
+				{alert("Grade: B");}
+			else if (average>70)
+				{alert("Grade: C");}
+			else if (average>60)
+				{alert("Grade: D");}
+			else {alert("You failed");}
+			
+		</script>
+	</body>
+</html>
